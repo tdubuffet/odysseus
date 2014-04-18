@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="1">
+                <source>login.remerber_me</source>
+                <target> Se souvenir de moi</target>
+            </trans-unit>
+            <trans-unit id="2">
+                <source>login.sign_me_in</source>
+                <target>Se connecter</target>
+            </trans-unit>
+            <trans-unit id="3">
+                <source>login.forgot_password</source>
+                <target>Mot de passe perdu ?</target>
+            </trans-unit>
+            <trans-unit id="4">
+                <source>login.mail</source>
+                <target>Adresse mail</target>
+            </trans-unit>
+            <trans-unit id="5">
+                <source>login.password</source>
+                <target>Mot de passe</target>
+            </trans-unit>
+            <trans-unit id="6">
+                <source>login.sign_in_admin</source>
+                <target>Se connecter à l'administration</target>
+            </trans-unit>
+            <trans-unit id="7">
+                <source>login.form_empty</source>
+                <target>Merci de remplir les champs du formulaire</target>
+            </trans-unit>
+            <trans-unit id="8">
+                <source>login.not_result</source>
+                <target>Aucun compte pour cette adresse mail.</target>
+            </trans-unit>
+            <trans-unit id="9">
+                <source>login.password_invalid</source>
+                <target>Le mot de passe est invalide.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

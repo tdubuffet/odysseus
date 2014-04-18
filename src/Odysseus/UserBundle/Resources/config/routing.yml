@@ -1,0 +1,7 @@
+odysseus_user_back_login:
+    pattern:  /admin/login
+    defaults: { _controller: OdysseusUserBundle:Back:login }
+
+odysseus_user_back_test:
+    pattern:  /admin/test
+    defaults: { _controller: OdysseusUserBundle:Back:test }

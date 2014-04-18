@@ -1,0 +1,4 @@
+odysseus_user:
+    resource: "@OdysseusUserBundle/Resources/config/routing.yml"
+    prefix:   /
+

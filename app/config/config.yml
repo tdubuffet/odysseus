@@ -15,7 +15,7 @@ framework:
     templating:
         engines: ['twig']
         #assets_version: SomeVersionScheme
-    default_locale:  "%locale%"
+    default_locale:  "fr"
     trusted_hosts:   ~
     trusted_proxies: ~
     session:
@@ -59,7 +59,14 @@ doctrine:
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
         auto_mapping: true
-
+        mappings:
+            Odysseus:
+                type: annotation
+                is_bundle: false
+                dir: %kernel.root_dir%/../src/Odysseus/Entity
+                prefix: Odysseus\Entity
+                alias: Odysseus
+        
 # Swiftmailer Configuration
 swiftmailer:
     transport: "%mailer_transport%"

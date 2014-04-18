@@ -6,6 +6,7 @@ framework:
         resource: "%kernel.root_dir%/config/routing_dev.yml"
         strict_requirements: true
     profiler: { only_exceptions: false }
+    translator: { fallback: fr }
 
 web_profiler:
     toolbar: true
@@ -31,6 +32,9 @@ monolog:
 
 assetic:
     use_controller: true
-
-#swiftmailer:
-#    delivery_address: me@example.com
+    
+services:
+    isconnected:
+        class:  Odysseus\UserBundle\Listener\IsConnected
+        tags:
+            - { name: kernel.event_listener, event: kernel.request, method: onNotConnected }
